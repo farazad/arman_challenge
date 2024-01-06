@@ -15,3 +15,4 @@ class Seat(models.Model):
     match = models.ForeignKey(Match, on_delete=models.CASCADE)
     seat_number = models.CharField(max_length=10)
     is_available = models.BooleanField(default=True)
+    is_reserved = models.BooleanField(default=False)
